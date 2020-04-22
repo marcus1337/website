@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<!--
+	Eventually by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+
+
+<html>
+	<head>
+		<title>FullRune</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+<style>
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  max-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px;
+  margin: -5px -20px -5px -5px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #aad;}
+
+.show {display: block;}
+</style>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<h1>FullRune Games</h1>
+				<p>Only quality content. <br />
+				Contact or visit links below!</p>
+			</header>
+
+
+
+  <select name="cars" style="width: 400px" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+    <option value="" selected disabled hidden>Select a game...</option>
+    <option value="https://www.microsoft.com/en-us/p/half-robot/9p93l2bhq7jx">Half Robot (PC)</option>
+    <option value="https://drive.google.com/file/d/1qzIEL87qBTHm-J2v-LubOmEDxuAGFCXM/view">Waiting Wizards (PC)</option>
+    <option value="https://play.google.com/store/apps/developer?id=FullRune&hl=sv">Various Android Games</option>
+  </select>
+		
+		<!--	<form id="signup-form" method="post" action="#">
+				<input type="email" name="email" id="email" placeholder="Email Address" />
+				<input type="submit" value="Sign Up" />
+			</form> -->
+			
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://1337programmer.blogspot.com/" class="icon brands fa-blogger"><span class="label">Blog</span></a></li>
+					<li><a href="https://www.youtube.com/user/XfsadsBOT047" class="icon brands fa-youtube"><span class="label">Instagram</span></a></li>
+					<li><a href="https://github.com/marcus1337" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="mailto:info@fullrune.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; FullRune.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/main.js"></script>
+
+			<script>
+			function myFunction() {
+			  document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick = function(event) {
+			  if (!event.target.matches('.dropbtn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+				  var openDropdown = dropdowns[i];
+				  if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				  }
+				}
+			  }
+			}
+			</script>
+
+	</body>
+</html>
