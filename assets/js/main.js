@@ -19,7 +19,7 @@
 				'images/bg02.jpg': 'center',
 				'images/bg03.jpg': 'center',
 			},
-			delay: 10000
+			delay: 50000
 		};
 
 		var pos = 0, lastPos = 0,
