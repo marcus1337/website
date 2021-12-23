@@ -1,102 +1,182 @@
 <!DOCTYPE HTML>
-<!--
-	Eventually by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 
 
 <html>
-	<head>
-		<title>FullRune</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
 
-<style>
+<head>
+	<title>FullRune</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
-}
+	<style>
+		body {
+			background-image: url('images/pyramid.png');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+			font-family: 'Courier New', Courier, monospace;
+		}
 
-.dropdown {
-  position: center;
-  display: inline-block;
-  vertical-align: top;
-}
+		header {
+			color: beige;
+		}
 
-.dropdown-content {
-  display: none;
-  position: relative;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  max-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  overflow: hidden;
-}
+		.fa {
+			padding: 10px;
+			font-size: 30px;
+			width: 30px;
+			text-align: center;
+			text-decoration: none;
+			margin: 5px 2px;
+		}
 
-.dropdown-content a {
-  color: black;
-  padding: 10px;
-  margin: -5px -20px -5px -5px;
-  text-decoration: none;
-  display: block;
-}
+		.fa:hover {
+			opacity: 0.7;
+		}
 
-.dropdown a:hover {background-color: #aad;}
+		.fa-github {
+			background: #6880b6;
+			color: white;
+		}
 
-.show {display: block;}
-</style>
+		.fa-envelope {
+			background: #a382ff;
+			color: white;
+		}
 
-	</head>
-	<body class="is-preload">
+		footer {
+			position: absolute;
+			text-align: center;
+			bottom: 0;
+			width: 15%;
+			height: 70px;
+			background: rgba(51, 66, 73, 0.11);
+		}
 
-			<header id="header">
-				<h1>fullrune games</h1>
+		.dropdown {
+			position: relative;
+			display: inline-block;
+		}
 
-			</header>
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #ffbbbb;
+			min-width: 200px;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #f19999
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+			background-color: burlywood;
+		}
+
+		.dropbtn {
+			font-size: large;
+			background-color: darkgray;
+		}
+
+		.dropdown:hover .dropbtn {
+			background-color: #464640;
+		}
 
 
-  <select name="cars" style="width: 400px" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-    <option value="" selected disabled hidden>Select a game...</option>
-	<option value="https://store.steampowered.com/app/1680300/Spades/">Spades</option>
-    <option value="https://www.microsoft.com/en-us/p/half-robot/9p93l2bhq7jx">Half Robot</option>
-    <option value="https://play.google.com/store/apps/developer?id=FullRune&hl=sv">Android</option>
-  </select>
-					
+		.button {
+			border: none;
+			color: white;
+			padding: 16px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			transition-duration: 0.4s;
+			cursor: pointer;
+		}
 
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://github.com/marcus1337" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="mailto:info@fullrune.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; FullRune.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</footer>
+		.button1 {
+			font-family:'Times New Roman', Times, serif;
+			background-color: rgb(0, 0, 0);
+			color: rgb(195, 195, 195);
+			border: 2px solid #4CAF50;
+			font-size: large;
+		}
+
+		.button1:hover {
+			background-color: #4CAF50;
+			color: white;
+		}
+
+		.button2 {
+			font-size: large;
+			font-family:'Times New Roman', Times, serif;
+			background-color: rgb(0, 0, 0);
+			color: rgb(195, 195, 195);
+			border: 2px solid #008CBA;
+		}
+
+		.button2:hover {
+			background-color: #008CBA;
+			color: white;
+		}
+
+		h3{
+			font-size: larger;
+			font-family: fantasy;
+			color: rgb(173, 173, 173);
+		}
+		div{
+			text-align: center;
+			max-width: fit-content;
+			background-color:rgba(44, 37, 0, 0.013);
+			position: relative;
+		}
+		.div1{
+			left: 35%;
+			margin-top: 15%;
+		}
+		.div2{
+			left: 50%;
+			margin-top: 5%;
+		}
+	</style>
+
+</head>
+
+<body>
 
 
-			<script src="assets/js/main.js"></script>
+	<div class="div1">
+		<h3>PC Games</h3>
+		<button class="button button2" onclick="location.href='https://store.steampowered.com/app/1680300/Spades/'" type="button">Spades</button>
+		<button class="button button2" onclick="location.href='https://www.microsoft.com/en-us/p/half-robot/9p93l2bhq7jx'" type="button">Half Robot</button>
+	</div>
 
-			<script>
-			function myFunction() {
-			  document.getElementById("myDropdown").classList.toggle("show");
-			}
-			window.onclick = function(event) {
-			  if (!event.target.matches('.dropbtn')) {
-				var dropdowns = document.getElementsByClassName("dropdown-content");
-				var i;
-				for (i = 0; i < dropdowns.length; i++) {
-				  var openDropdown = dropdowns[i];
-				  if (openDropdown.classList.contains('show')) {
-					openDropdown.classList.remove('show');
-				  }
-				}
-			  }
-			}
-			</script>
+	<div class="div2">
+		<h3>Mobile Games</h3>
+		<button class="button button1" onclick="location.href='https://play.google.com/store/apps/details?id=test.morris&hl=sv'" type="button">Morris</button>
+		<button class="button button1" onclick="location.href='https://play.google.com/store/apps/details?id=com.fullrune.areashiftertwo&hl=sv'" type="button">Area Shifter</button>
+	</div>
 
-	</body>
+
+	<footer>
+		<a href="mailto:info@fullrune.com" class="fa fa-envelope"></a>
+		<a href="https://github.com/marcus1337" class="fa fa-github"></a>
+	</footer>
+
+</body>
+
 </html>
