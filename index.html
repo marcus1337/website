@@ -7,25 +7,23 @@
 	<title>FullRune</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<style>
 		body {
-			background-image: url('images/pyramid.png');
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			background-size: 100% 100%;
+			
+			background-color: lightgrey;
 			font-family: 'Courier New', Courier, monospace;
 		}
 
 		header {
 			color: beige;
 		}
-
 		.fa {
 			padding: 10px;
 			font-size: 30px;
-			width: 30px;
+			width: 50px;
 			text-align: center;
 			text-decoration: none;
 			margin: 5px 2px;
@@ -44,139 +42,107 @@
 			background: #a382ff;
 			color: white;
 		}
-
-		footer {
-			position: absolute;
-			text-align: center;
-			bottom: 0;
-			width: 15%;
-			height: 70px;
-			background: rgba(51, 66, 73, 0.11);
-		}
-
-		.dropdown {
-			position: relative;
-			display: inline-block;
-		}
-
-		.dropdown-content {
-			display: none;
-			position: absolute;
-			background-color: #ffbbbb;
-			min-width: 200px;
-			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-			z-index: 1;
-		}
-
-		.dropdown-content a {
-			color: black;
-			padding: 12px 16px;
-			text-decoration: none;
-			display: block;
-		}
-
-		.dropdown-content a:hover {
-			background-color: #f19999
-		}
-
-		.dropdown:hover .dropdown-content {
-			display: block;
-			background-color: burlywood;
-		}
-
-		.dropbtn {
-			font-size: large;
-			background-color: darkgray;
-		}
-
-		.dropdown:hover .dropbtn {
-			background-color: #464640;
-		}
-
-
-		.button {
-			border: none;
-			color: white;
-			padding: 16px 32px;
-			text-align: center;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 16px;
-			margin: 4px 2px;
-			transition-duration: 0.4s;
-			cursor: pointer;
-		}
-
-		.button1 {
-			font-family:'Times New Roman', Times, serif;
-			background-color: rgb(0, 0, 0);
-			color: rgb(195, 195, 195);
-			border: 2px solid #4CAF50;
-			font-size: large;
-		}
-
-		.button1:hover {
-			background-color: #4CAF50;
-			color: white;
-		}
-
-		.button2 {
-			font-size: large;
-			font-family:'Times New Roman', Times, serif;
-			background-color: rgb(0, 0, 0);
-			color: rgb(195, 195, 195);
-			border: 2px solid #008CBA;
-		}
-
-		.button2:hover {
-			background-color: #008CBA;
-			color: white;
-		}
-
-		h3{
-			font-size: larger;
-			font-family: fantasy;
-			color: rgb(173, 173, 173);
-		}
-		div{
-			text-align: center;
-			max-width: fit-content;
-			background-color:rgba(44, 37, 0, 0.013);
-			position: relative;
-		}
-		.div1{
-			left: 35%;
-			margin-top: 15%;
-		}
-		.div2{
-			left: 50%;
-			margin-top: 5%;
-		}
 	</style>
 
 </head>
 
 <body>
 
+	<div class="w3-row">
+		<div class="w3-half w3-black w3-container w3-center" style="height:700px">
+		  <div class="w3-padding-64">
+			<h1>Content</h1>
+		  </div>
+		  <div class="w3-padding-64">
+			<a href="#" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Home</a>
+			<a href="#work" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Screenshots</a>
+			<a href="#work" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Games</a>
+			<a href="#contact" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Contact</a>
+		  </div>
+		</div>
+		<div class="w3-half w3-blue-grey w3-container" style="height:700px">
+		  <div class="w3-padding-64 w3-center">
+			<h1>About Me</h1>
+			<img src="https://www.w3schools.com/w3images/avatar3.png" class="w3-margin w3-circle" alt="Person" style="width:25%">
+			<div class="w3-left-align w3-padding-large">
+			  <p>I'm a software engineer with an interest for games.</p>
+			  <p>I code all sorts of stuff, my favorite language is C++.</p>
+			  <p>I'm open to freelance work - drop me an email via the mail button below.</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
 
-	<div class="div1">
-		<h3>PC Games</h3>
-		<button class="button button2" onclick="location.href='https://store.steampowered.com/app/1680300/Spades/'" type="button">Spades</button>
-		<button class="button button2" onclick="location.href='https://www.microsoft.com/en-us/p/half-robot/9p93l2bhq7jx'" type="button">Half Robot</button>
-	</div>
-
-	<div class="div2">
-		<h3>Mobile Games</h3>
-		<button class="button button1" onclick="location.href='https://play.google.com/store/apps/details?id=test.morris&hl=sv'" type="button">Morris</button>
-		<button class="button button1" onclick="location.href='https://play.google.com/store/apps/details?id=com.fullrune.areashiftertwo&hl=sv'" type="button">Area Shifter</button>
-	</div>
+	  <div class="w3-row">
+		<div class="w3-half w3-light-grey w3-center" style="min-height:800px" id="work">
+		  <div class="w3-padding-64">
+			<h2>Screenshot</h2>
+			<p>From a graphics project.</p>
+		  </div>
+		  <div class="w3-row">
+			<img src="/images/bg011.png" style="width:50%">
 
 
-	<footer>
-		<a href="mailto:info@fullrune.com" class="fa fa-envelope"></a>
-		<a href="https://github.com/marcus1337" class="fa fa-github"></a>
-	</footer>
+		  </div>
+
+		</div>
+		<div class="w3-half w3-dark-grey w3-container" style="min-height:800px">
+		  <div class="w3-padding-64 w3-center">
+			<h2>Games</h2>
+			<p>Some stuff that I've released.</p>
+			<div class="w3-container w3-responsive">
+			  <table class="w3-table">
+				<tr>
+				  <th>Year</th>
+				  <th>Title</th>
+				  <th>Platform</th>
+				</tr>
+				<tr class="w3-white">
+				  <td>2021</td>
+				  <td><a href="https://store.steampowered.com/app/1680300/Spades/">Spades</a></td>
+				  <td>PC</td>
+				</tr>
+				<tr>
+				  <td>2017</td>
+				  <td><a href="https://www.microsoft.com/en-us/p/half-robot/9p93l2bhq7jx">Half Robot</a></td>
+				  <td>PC</td>
+				</tr>
+				<tr class="w3-white">
+				  <td>2018</td>
+				  <td><a href="https://play.google.com/store/apps/details?id=com.fullrune.areashiftertwo&hl=en">Area Shifter 2</a></td>
+				  <td>Android</td>
+				</tr>
+				<tr>
+				  <td>2018</td>
+				  <td><a href="https://play.google.com/store/apps/details?id=test.morris&hl=en">Nine Men's Morris</a></td>
+				  <td>Android</td>
+				</tr>
+			  </table>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
+
+	  <div class="w3-row" id="contact">
+		<div class="w3-half w3-black w3-container w3-center" style="width:100%; height:700px">
+		  <div class="w3-padding-64">
+			<h1>Contact</h1>
+		  </div>
+		  <div class="w3-padding-64">
+			<p>...Need help? Let's talk.</p>
+			<p>Discord: xXrandom#1464</p>
+			<p>E-mail: info@fullrune.com</p>
+		  </div>
+		</div>
+	  </div>
 
 </body>
+
+<footer class="w3-container w3-black w3-padding-16">
+	<a href="mailto:info@fullrune.com" class="fa fa-envelope"></a>
+	<a href="https://github.com/marcus1337" class="fa fa-github"></a>
+  </footer>
 
 </html>
